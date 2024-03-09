@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sundahub</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/output.css">
+    <!-- ICONS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.min.css">
+    <!-- FONT-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+</head>
+<body class="bg-gray-100">
+    <!-- Header -->
+    <header class="sticky h-[90px] top-0 bg-white shadow-xl z-30">
+        <div class="container mx-auto flex justify-between h-full items-center">
+            <!-- logo -->
+            <div>
+                <a href="#" class="flex flex-row items-center gap-3">
+                    <img class="h-[40px]" src="assets/assets/Sundahub logo.webp" alt="Logo">
+                    <h2 class="mt-[5px] text-[35px]">Sundahub</h2>
+                </a>
+            </div>
+            <!-- nav -->
+            <nav class="inline">
+                <!-- nav trigger -->
+                <div class="cursor-pointer lg:hidden" id="nav_trigger_btn">
+                    <i class="ri-menu-4-line text-4xl text-primary"></i>
+                </div>
+                <ul class="fixed p-0 h-0 w-full bg-white overflow-hidden border-t top-[90px] flex flex-col gap-4 left-0 
+                right-0 lg:relative lg:flex-row lg:p-0 lg:top-0 lg:border-none lg:h-full transition-all duration-300 nav_btn"
+                id="nav_menu">
+                    <li><a href="#">Beranda</a></li>
+                    <li><a href="#about">Tentang</a></li>
+                    <li><a href="#testimoni">Testimoni</a></li>
+                    <li><a href="#jasa">Jasa</a></li>
+                    <li><a href="#berita">Berita</a></li>
+                    <li><a href="#hubungi">Hubungi kami</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- Page Wrapper -->
+    <main class="max-w-[1920px] mx-auto bg-white overflow-hidden">
+        <!-- grid -->
+        <!-- <div class="xl:bg-grid xl:bg-center xl:bg-repeat-y fixed top-0 bottom-0 left-0 right-0 z-10"></div> -->
+        <!-- hero -->
+        <section class="hero h-[640px] xl:h-[840px] bg-hero bg-center lg:bg-cover
+        bg-no-repeat bg-fixed xl:rounded-bl-[290px] relative z-20">
+            <div class="container mx-auto h-full flex items-center justify-center xl:justify-start">
+                <!-- text -->
+                <div class="hero__text w-[567px] flex flex-col items-center text-center xl:text-left lg:items-start">
+                    <h1 class="h1 mb-8 text-accent-secondary">Jadikan Acaramu Lebih Berwarna</h1>
+                    <p class="mb-8 text-accent-secondary">Punya acara, tapi membosankan? Jangan ragu!<br> Sewalah Jasa Tari Sunda dari Universitas Padjadjaran.</p>
+                    <button class="btn bg-slate-800 mx-auto lg:mx-0 hover:bg-slate-200 hover:text-slate-900 hover:shadow-md focus:ring focus:ring-accent transition duration-300">
+                        Pesan sekarang
+                        <i class="ri-arrow-right-line text-accent"></i>
+                    </button>
+                </div>
+            </div>
+        </section>
+        <!-- langkah -->
+        <section class="steps mt-[80px] xl:mt-[200px] relative z-20" id="langkah">
+            <div class="mx-auto container">
+                <div class="text-center mb-24">
+                    <h2 class="Step__title h2 mb-4">Langkah Pemesanan</h2>
+                </div>
+                <!-- grid items -->
+                <div class="grid grid-cols-1 gap-12 xl:grid-cols-3">
+                    <!-- steps 1 -->
+                    <div class="steps__step text-center">
+                        <div class="mb-4">
+                            <i class="ri-mail-send-line text-5xl text-accent"></i>
+                        </div>
+                        <h3 class="h3 mb-5">Klik Tombol di Bawah</h3>
+                        <p class="mb-5 max-w-md mx-auto">Klik untuk memesan Sundahub.</p>
+                        <a href="#" class="font-medium gap-2 flex justify-center">
+                            Pesan Sekarang <i class="ri-arrow-right-line text-accent"></i></a>
+                    </div>
+                    <!-- steps 2 -->
+                    <div class="steps__step text-center">
+                        <div class="mb-4">
+                            <i class="ri-calendar-check-line text-5xl text-accent"></i>
+                        </div>
+                        <h3 class="h3 mb-5">Tempat, Waktu, dan Jenis Jasa</h3>
+                        <p class="mb-5 max-w-md mx-auto">Tentukan jenis jasa apa yang kalian inginkan, dan bicarakan waktu dan tempat sesuai keinginan anda.</p>
+                    </div>
+                    <!-- steps 3 -->
+                    <div class="steps__step text-center">
+                        <div class="mb-4">
+                            <i class="ri-shake-hands-line text-5xl text-accent"></i>
+                        </div>
+                        <h3 class="h3 mb-5">Melakukan Dealing</h3>
+                        <p class="mb-5 max-w-md mx-auto">Diskusikan harga jasa dengan Sundahub dan lakukan <i>dealing</i>. Konfirmasikan pembayaran anda.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- about -->
+        <section class="about mt-[80px] xl:mt-[200px] relative z-20" id="about">
+            <div class="container mx-auto xl:px-0"> 
+                <div class="flex flex-col xl:flex-row text-center xl:text-left 
+                justify-between items-center gap-8 xl:gap-[74px]">
+                    <!-- text -->
+                    <div class="flex-1 order-2 xl:order-none max-w-xl xl:max-w-[410px] flex flex-col
+                    items-center xl:items-start gap-8">
+                        <h2 class="h2">Menyediakan Jasa Tari Sunda yang Menawan</h2>
+                        <p class="p">Jasa seni tari Sunda asli dari Universitas Padjadjaran yang memberikan kesenian yang menawan dari pengetahuan dan Jasa sang penari secara turun temurun.</p>
+                        <!-- phone -->
+                        <div class="flex justify-center items-center gap-4 xl:justify-start">
+                            <!-- icon -->
+                            <div class="bg-accent/15 w-[93px] h-[93px] rounded-full flex
+                            justify-center items-center">
+                                <i class="ri-phone-fill text-accent text-4xl"></i>
+                            </div>
+                            <!-- number -->
+                            <div class="text-left">
+                                <div class="text-2xl font-bold">0881 - 0100 - 80369</div>
+                                <div>Panggil kami kapan saja!</div>
+                            </div>
+                        </div>
+                        <!-- button -->
+                        <button class="btn bg-slate-800 mx-auto lg:mx-0 hover:bg-slate-200 hover:text-slate-900 hover:shadow-md focus:ring focus:ring-accent transition duration-300">Hubungi kami
+                            <i class="ri-arrow-right-line text-accent"></i>
+                        </button>
+                    </div>
+                    <!-- img -->
+                    <div class="about__img max-w-[453px] order-1 xl:order-none
+                    mx-auto xl:max-w-none xl:mx-0">
+                    <img class="w-[600px] rounded-bl-[250px] rounded-tr-[250px]" src="assets/assets/about/tari-solo.jpg" alt="about">
+                </div>
+                
+                </div>
+            </div>
+        </section>
+        <!-- Testimonial -->
+        <section class="testimonial mt-[80px] xl:mt-[200px] relative z-20" id="testimoni">
+            <div class="testimonial__bg container mx-auto bg-accent-secondary rounded-[70px]
+            px-6">
+                <div class="flex flex-col items-center pt-[88px] pb-[110px]">
+                    <h2 class="testimonial__title h2 mb-9 text-center">Testimoni Klien Kami</h2>
+                <!-- slider -->
+                <div class="w-full">
+                    <div class="testimonial__slider swiper h-[400px]">
+                        <div class="swiper-wrapper">
+                            <!-- slides 1 -->
+                            <div class="swiper-slide">
+                                <!-- items -->
+                                <div class="testimonial__item w-full max-w-[450px] h-[340px]
+                                bg-white rounded-[30px] flex flex-col justify-center p-9 mx-auto">
+                                <div class="flex gap-4 mb-6">
+                                    <img src="assets/assets/testimonial/01.png" alt="">
+                                    <div>
+                                        <h3 class="h3">Testimoner-1</h3>
+                                        <div>
+                                            PT. Mencari Nafkah
+                                        </div>
+                                    </div>
+                                </div>
+                                <p>Penampilan yang hebat! Saya belum pernah menyaksikan penampilan seindah ini.</p>
+                                </div>
+                            </div>
+                            <!-- slides 2 -->
+                            <div class="swiper-slide">
+                                <!-- items -->
+                                <div class="testimonial__item w-full max-w-[450px] h-[340px]
+                                bg-white rounded-[30px] flex flex-col justify-center p-9 mx-auto">
+                                <div class="flex gap-4 mb-6">
+                                    <img src="assets/assets/testimonial/02.png" alt="">
+                                    <div>
+                                        <h3 class="h3">Testimoner-2</h3>
+                                        <div>
+                                            SMAN 90 Bandung
+                                        </div>
+                                    </div>
+                                </div>
+                                <p>Saya merasa puas dengan pelayanan. Terimakasih banyak Sundahub.</p>
+                                </div>
+                            </div>
+                            <!-- slides 3 -->
+                            <div class="swiper-slide">
+                                <!-- items -->
+                                <div class="testimonial__item w-full max-w-[450px] h-[340px]
+                                bg-white rounded-[30px] flex flex-col justify-center p-9 mx-auto">
+                                <div class="flex gap-4 mb-6">
+                                    <img src="assets/assets/testimonial/03.png" alt="">
+                                    <div>
+                                        <h3 class="h3">Testimoner-3</h3>
+                                        <div>
+                                            Universitas Ilmu Padi
+                                        </div>
+                                    </div>
+                                </div>
+                                <p>Sungguh hebat penari-penari dari Universitas Padjadjaran, terus kembangkan!</p>
+                                </div>
+                            </div>
+                            <!-- slides 4 -->
+                            <div class="swiper-slide">
+                                <!-- items -->
+                                <div class="testimonial__item w-full max-w-[450px] h-[340px]
+                                bg-white rounded-[30px] flex flex-col justify-center p-9 mx-auto">
+                                <div class="flex gap-4 mb-6">
+                                    <img src="assets/assets/testimonial/04.png" alt="">
+                                    <div>
+                                        <h3 class="h3">Testimoner-4</h3>
+                                        <div>
+                                            Sunda Lovers
+                                        </div>
+                                    </div>
+                                </div>
+                                <p>Saya gembira menyaksikan mahasiswa membudidayakan kesenian Sunda secantik ini.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- swiper pagination -->
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </section>
+        <!-- brand -->
+        <!-- <section class="brand mt-[80px] xl:mt-[200px] relative z-20">
+            <div class="container mx-auto">
+                <div class="flex flex-col xl:flex-row justify-between items-center gap-12">
+                    <div class="w-[10px]"><img class="brand__img w-full overflow-hidden" src="assets/assets/brands/lises-logo.png" alt=""></div>
+                    <div class="w-[10px]"><img class="brand__img w-full overflow-hidden" src="assets/assets/brands/unpad.jpg" alt=""></div>
+                    <div class="w-[10px]"><img class="brand__img w-full overflow-hidden" src="assets/assets/brands/logo-up.png" alt=""></div>
+                </div>
+            </div>
+        </section> -->
+        <!-- jasa -->
+        <section class="work mt-[80px] xl:mt-[150px] relative z-20" id="jasa">
+            <div class="container mx-auto px-0">
+                <!-- text -->
+                <div class="text-center mb-24">
+                    <h2 class="work__title h2 mb-4">Apa yang kami tawarkan</h2>
+                    <p class="work__subtitle max-w-3xl mx-auto">Berbagai jasa kesenian Sunda yang murah dan berkualitas yang kami tawarkan.</p>
+                </div>
+                <!-- grid -->
+                <div class="work__grid grid grid-cols-1 xl:grid-cols-2 gap-x-[104px] gap-y-[56px]">
+                    <!-- item 1-->
+                    <div class="w-full max-w-[548px] h-full mx-auto">
+                        <img class="mb-6 rounded-tr-[100px]" src="assets/assets/work/IMG_4269.png" alt="">
+                        <div class="flex justify-between items-center w-full">
+                            <div>
+                                <h3 class="h3">Seni Pertunjukan</h3>
+                                <p>Pilihlah Tarian dan Musik yang Beragam</p>
+                            </div>
+                            <button class="bg-accent-secondary hover:bg-accent/25 w-[70px] h-[70px] rounded-full">
+                                <i class="ri-arrow-right-s-line text-primary text-3xl pl-1"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <!-- item 2-->
+                    <div class="w-full max-w-[548px] h-full mx-auto">
+                        <img class="mb-6 rounded-tl-[100px]" src="assets/assets/work/upacaraadat.jpg" alt="">
+                        <div class="flex justify-between items-center w-full">
+                            <div>
+                                <h3 class="h3">Upacara Adat</h3>
+                                <p>Pilihlah berbagai Upacara Adat</p>
+                            </div>
+                            <button class="bg-accent-secondary hover:bg-accent/25 w-[70px] h-[70px] rounded-full">
+                                <i class="ri-arrow-right-s-line text-primary text-3xl pl-1"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <!-- item 3
+                    <div class="w-full max-w-[548px] h-full mx-auto">
+                        <img class="mb-6" src="assets/assets/work/03.png" alt="">
+                        <div class="flex justify-between items-center w-full">
+                            <div>
+                                <h3 class="h3">Modern Kitchen</h3>
+                                <p>Decor/Architecture</p>
+                            </div>
+                            <button class="bg-accent-secondary hover:bg-accent/25 w-[70px] h-[70px] rounded-full">
+                                <i class="ri-arrow-right-s-line text-primary text-3xl pl-1"></i>
+                            </button>
+                        </div>
+                    </div> -->
+                    <!-- item 4-->
+                    <!-- <div class="w-full max-w-[548px] h-full mx-auto">
+                        <img class="mb-6" src="assets/assets/work/04.png" alt="">
+                        <div class="flex justify-between items-center w-full">
+                            <div>
+                                <h3 class="h3">Modern Kitchen</h3>
+                                <p>Decor/Architecture</p>
+                            </div>
+                            <button class="bg-accent-secondary hover:bg-accent/25 w-[70px] h-[70px] rounded-full">
+                                <i class="ri-arrow-right-s-line text-primary text-3xl pl-1"></i>
+                            </button>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </section>
+        <!-- stats -->
+        <section class="stats mt-[80px] xl:mt-[150px] relative z-20 bg-accent-secondary py-[80px] 
+        xl:p-[150px]">
+            <div class="container mx-auto">
+                <!-- grid -->
+                <div class="grid grid-cols-1 xl:grid-cols-3 gap-12">
+                    <!-- grid items 1-->
+                    <div class="stats__items text-center xl:border-r xl:border-accent">
+                        <h3 class="h1 font-primary text-accent">42+</h3>
+                        <p>Tahun Pengalaman</p>
+                    </div>
+                    <!-- grid items 2-->
+                    <div class="stats__items text-center xl:border-r xl:border-accent">
+                        <h3 class="h1 font-primary text-accent">391+</h3>
+                        <p>Penampilan</p>
+                    </div>
+                    <!-- grid items 3-->
+                    <div class="stats__items text-center xl:border-r xl:border-accent">
+                        <h3 class="h1 font-primary text-accent">341+</h3>
+                        <p>Pelanggan puas</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- news -->
+        <section class="news mt-[80px] xl:mt-[150px] relative z-20" id="berita">
+            <div class="container mx-auto px-0">
+                <!-- text -->
+                <div class="text-center mb-[52px] max-w-[810px] mx-auto">
+                    <h2 class="h2 news__title mb-3">Artikel & Berita</h2>
+                    <p class="news__subtitle">Artikel terbaru dari kami, prestasi-prestasi yang telah dilakukan oleh Jasa Tari Sundahub</p>
+                </div>
+                <!-- grid -->
+                <div class="news__grid grid grid-cols-1 xl:grid-cols-3 gap-[27px]">
+                    <!-- items grid 1-->
+                    <div class="new__item w-full max-w-[382px] h-[520px] border border-primary/20
+                    rounded-[62px] p-[20px] hover:bg-accent-secondary transition-all group cursor-pointer
+                    mx-auto xl:mx-0">
+                    <img class="mb-5 rounded-t-[52px]" src="assets/assets/news/lises-korea.jpg" alt="">
+                    <div class="flex flex-col gap-[30px]">
+                        <h3 class="h3">Menampilkan kesenian sunda di Malaysia dan Korea Selatan</h3>
+                        <div class="flex items-center justify-between">
+                            <p class="text-base">18 October,2023</p>
+                            <button class="bg-accent-secondary w-[52px] h-[52px] rounded-full 
+                            group-hover:bg-white transition-all"> 
+                                <i class="ri-arrow-right-s-line text-3xl text-primary pl-1">
+                            </i></button>
+                        </div>
+                    </div>
+                    </div>
+                    <!-- items grid 2-->
+                    <div class="new__item w-full max-w-[382px] h-[520px] border border-primary/20
+                    rounded-[62px] p-[20px] hover:bg-accent-secondary transition-all group cursor-pointer
+                    mx-auto xl:mx-0">
+                    <img class="mb-5 rounded-t-[52px]" src="assets/assets/news/lises-2022.jpg" alt="">
+                    <div class="flex flex-col gap-[30px]">
+                        <h3 class="h3">Raih Juara di Ajang Gebyar LLDikti Wilayah IV 2022</h3>
+                        <div class="flex items-center justify-between">
+                            <p class="text-base">28 August,2022</p>
+                            <button class="bg-accent-secondary w-[52px] h-[52px] rounded-full 
+                            group-hover:bg-white transition-all"> 
+                                <i class="ri-arrow-right-s-line text-3xl text-primary pl-1">
+                            </i></button>
+                        </div>
+                    </div>
+                </div>
+                <!-- items grid 3-->
+                <div class="new__item w-full max-w-[382px] h-[520px] border border-primary/20
+                rounded-[62px] p-[20px] hover:bg-accent-secondary transition-all group cursor-pointer
+                mx-auto xl:mx-0">
+                <img class="mb-5 rounded-t-[52px]" src="assets/assets/news/lises-thailand.jpg" alt="">
+                <div class="flex flex-col gap-[30px]">
+                    <h3 class="h3">Tampil Memukau di 2 Universitas di Thailand</h3>
+                    <div class="flex items-center justify-between">
+                        <p class="text-base">14 May,2019</p>
+                        <button class="bg-accent-secondary w-[52px] h-[52px] rounded-full 
+                        group-hover:bg-white transition-all"> 
+                            <i class="ri-arrow-right-s-line text-3xl text-primary pl-1">
+                        </i></button>
+                    </div>
+                </div>
+                </div>
+        </section>
+        <!-- contact -->
+        <section class="contact mt-[80px] xl:mt-[150px] relative z-20 " id="hubungi">
+            <div class="container__container container mx-auto bg-primary rounded-[70px] py-[80px]">
+                <div class="contact__text max-w-[640px] mx-auto text-center">
+                    <h2 class="h2 text-white mb-4">Tertarik dengan <b>Sundahub</b>?</h2>
+                    <p class="text-white mb-8 max-w-sm xl:max-w-none mx-auto">Hubungi kami kapan saja untuk menyewa jasa Sundahub.</p>
+                    <button class="btn bg-accent hover:bg-accent/60 mx-auto">Hubungi kami<i class="ri-arrow-right-line text-primary"></i></button>
+                </div>
+            </div>
+        </section>
+        <!-- footer -->
+        <footer class="mt-[80px] xl:mt-[150px] relative z-20">
+            <div class="container mx-auto px-0">
+                <div class="flex flex-col xl:flex-row xl:gap-[100px] xl:mb-[150px]">
+                    <div class="footer__item  w-full max-w-[400px] mx-auto mb-8 text-center
+                    xl:text-left">
+                        <!-- logo -->
+                        <div class="flex justify-center xl:justify-start mb-8 ">
+                            <a href="#" class="flex flex-row items-center gap-3">
+                                <img class="h-[40px]" src="assets/assets/Sundahub logo.webp" alt="Logo">
+                                <h2 class="mt-[5px] text-[35px]">Sundahub</h2>
+                            </a>
+                        </div>
+                        <p class="mb-8 text-xl">Sundahub, jasa kesenian sunda yang menawarkan penampilan menawan.</p>
+                        <!-- socials-->
+                        <ul class="text-primary flex gap-[54px] justify-center xl:justify-start">
+                            <li><a href=""><i class="ri-instagram-fill text-4xl"></i></a></li>
+                            <li><a href=""><i class="ri-mail-fill text-4xl"></i></a></li>
+                        </ul>
+                    </div>
+        
+                    <div class="flex-1 flex flex-col xl:flex-row text-center xl:text-left gap-12
+                    xl:gap-[100px] xl:justify-end ">
+                        <div class="footer__item">
+                            <h3 class="h3 mb-3">Halaman</h3>
+                            <ul class="flex flex-col gap-4">
+                                <li><a href="">Tentang</a></li>
+                                <li><a href="">Testimoni</a></li>
+                                <li><a href="">Pengalaman</a></li>
+                                <li><a href="">Berita</a></li>
+                                <li><a href="">Hubungi kami</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer__item">
+                            <h3 class="h3 mb-3">Services</h3>
+                            <ul class="flex flex-col gap-4">
+                                <li><a href="">Seni Pertunjukan</a></li>
+                                <li><a href="">Upacara Adat</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer__item max-w-[260px] mx-auto xl:mx-0">
+                            <h3 class="h3 mb-3">Kontak</h3>
+                            <div class="flex flex-col gap-6 text-[20px]">
+                                <p>Universitas Padjadjaran, Jln. Ir. Soekarno km. 21 Jatinangor, Kab. Sumedang Jawa Barat</p>
+                                <p>sundahub.official@gmail.com</p>
+                                <p>0881-0100-80369</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Copyright-->
+            <p class="footer__copyright text-center text-lg py-10 bg-white xl:border-t">Copyright &copy; Sundahub 2024. All rights reserved.</p>
+        </footer>
+        <!-- temporary div -->
+        <!-- <div class="h-[3000px]"></div> -->
+    </main>
+    <!-- Scroll Reveal -->
+    <script src="js/scrollreveal.min.js"></script>
+    <!-- Swiper -->
+    <script src="js/swiper-bundle.min.js"></script>
+    <!-- Main -->
+    <script src="js/main.js"></script>
+</body>
+</html>
