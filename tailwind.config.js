@@ -18,7 +18,7 @@ module.exports = {
       secondary:'Jost',
     },
     backgroundImage:{
-      // hero: 'linear-gradient(rgba(0,0,0,0.30), rgba(0,0,0,0.30)), url(/assets/assets/hero/lises-bg.jpg)',
+      hero: 'linear-gradient(rgba(0,0,0,0.30), rgba(0,0,0,0.30)), url(/assets/assets/hero/lises-bg.jpg)',
       grid: 'url(/assets/assets/grid.png)',
     },
     extend: {
