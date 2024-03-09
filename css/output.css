@@ -941,6 +941,11 @@ video {
   border-color: rgb(41 47 54 / 0.2);
 }
 
+.bg-accent {
+  --tw-bg-opacity: 1;
+  background-color: rgb(205 162 116 / var(--tw-bg-opacity));
+}
+
 .bg-accent-secondary {
   --tw-bg-opacity: 1;
   background-color: rgb(244 240 236 / var(--tw-bg-opacity));
@@ -968,15 +973,6 @@ video {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-
-.bg-accent {
-  --tw-bg-opacity: 1;
-  background-color: rgb(205 162 116 / var(--tw-bg-opacity));
-}
-
-.bg-hero {
-  background-image: linear-gradient(rgba(0,0,0,0.30), rgba(0,0,0,0.30)), url(/assets/assets/hero/lises-bg.jpg);
 }
 
 .bg-fixed {
@@ -1215,6 +1211,10 @@ h1, h2, h3, h4, h5, h6 {
 .nav-is-open {
   height: 350px;
   padding: 1.5rem;
+}
+
+.bg-hero{
+  background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url(/assets/assets/hero/lises-bg.JPG);
 }
 
 .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
