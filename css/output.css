@@ -550,6 +550,12 @@ video {
   padding-left: 15px;
 }
 
+@media (min-width: 550px) {
+  .container {
+    max-width: 550px;
+  }
+}
+
 @media (min-width: 640px) {
   .container {
     max-width: 640px;
@@ -629,6 +635,11 @@ video {
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
+}
+
+.mx-0 {
+  margin-left: 0px;
+  margin-right: 0px;
 }
 
 .mb-24 {
@@ -908,13 +919,17 @@ video {
   border-radius: 9999px;
 }
 
+.rounded-none {
+  border-radius: 0px;
+}
+
 .rounded-t-\[52px\] {
   border-top-left-radius: 52px;
   border-top-right-radius: 52px;
 }
 
-.rounded-bl-\[250px\] {
-  border-bottom-left-radius: 250px;
+.rounded-bl-\[10rem\] {
+  border-bottom-left-radius: 10rem;
 }
 
 .rounded-tl-\[100px\] {
@@ -923,34 +938,6 @@ video {
 
 .rounded-tr-\[100px\] {
   border-top-right-radius: 100px;
-}
-
-.rounded-tr-\[250px\] {
-  border-top-right-radius: 250px;
-}
-
-.rounded-bl-\[30rem\] {
-  border-bottom-left-radius: 30rem;
-}
-
-.rounded-tr-\[20rem\] {
-  border-top-right-radius: 20rem;
-}
-
-.rounded-bl-\[20rem\] {
-  border-bottom-left-radius: 20rem;
-}
-
-.rounded-bl-\[15rem\] {
-  border-bottom-left-radius: 15rem;
-}
-
-.rounded-tr-\[15rem\] {
-  border-top-right-radius: 15rem;
-}
-
-.rounded-bl-\[10rem\] {
-  border-bottom-left-radius: 10rem;
 }
 
 .rounded-tr-\[10rem\] {
@@ -1045,6 +1032,16 @@ video {
 .py-\[80px\] {
   padding-top: 80px;
   padding-bottom: 80px;
+}
+
+.px-\[100\] {
+  padding-left: 100;
+  padding-right: 100;
+}
+
+.px-\[100\%\] {
+  padding-left: 100%;
+  padding-right: 100%;
 }
 
 .pb-\[110px\] {
@@ -1241,6 +1238,10 @@ h1, h2, h3, h4, h5, h6 {
   padding: 1.5rem;
 }
 
+<<<<<<< HEAD
+
+=======
+>>>>>>> 45c9b40e2afe43d47586743d0de5753dcaac8992
 .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
 .swiper-pagination-horizontal.swiper-pagination-bullets 
     .swiper-pagination-bullet {
@@ -1291,6 +1292,31 @@ h1, h2, h3, h4, h5, h6 {
 .group:hover .group-hover\:bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+@media (min-width: 550px) {
+  .xsm\:max-w-\[350px\] {
+    max-width: 350px;
+  }
+
+  .xsm\:rounded-\[70px\] {
+    border-radius: 70px;
+  }
+}
+
+@media (min-width: 640px) {
+  .sm\:mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .sm\:rounded-none {
+    border-radius: 0px;
+  }
+
+  .sm\:rounded-\[70px\] {
+    border-radius: 70px;
+  }
 }
 
 @media (min-width: 960px) {
