@@ -38,8 +38,9 @@
                 id="nav_menu">
                     <li><a href="#" class="duration-300">Beranda</a></li>
                     <li><a href="#about" class="duration-300">Tentang</a></li>
-                    <li><a href="#testimoni" class="duration-300">Testimoni</a></li>
                     <li><a href="#jasa" class="duration-300">Jasa</a></li>
+                    <li><a href="#langkah" class="duration-300">Langkah</a></li>
+                    <li><a href="#testimoni" class="duration-300">Testimoni</a></li>
                     <li><a href="#berita" class="duration-300">Berita</a></li>
                     <li><a href="#hubungi" class="duration-300">Hubungi kami</a></li>
                 </ul>
@@ -60,48 +61,11 @@
                 <div class="hero__text w-[567px] flex flex-col items-center text-center xl:text-left lg:items-start">
                     <h1 class="h1 mb-8 text-accent-secondary">Jadikan Acaramu Lebih Berwarna</h1>
                     <p class="mb-8 text-accent-secondary p">Punya acara, tapi membosankan? Jangan ragu!<br> Sewalah Jasa Tari Sunda dari Universitas Padjadjaran.</p>
-                    <button class="btn bg-slate-800 mx-auto lg:mx-0 hover:bg-slate-200 hover:text-slate-900 hover:shadow-md focus:ring focus:ring-accent transition duration-300">
+                    <button class="btn bg-slate-800 mx-auto lg:mx-0 hover:bg-slate-200 hover:text-slate-900 hover:shadow-md focus:ring focus:ring-accent transition duration-300"
+                    onclick="window.open('https://bit.ly/PesanSundahub', '_blank')">
                         Pesan sekarang
                         <i class="ri-arrow-right-line text-accent"></i>
                     </button>
-                </div>
-            </div>
-        </section>
-        
-        <!-- langkah -->
-        <section class="steps mt-[80px] xl:mt-[200px] relative z-20" id="langkah">
-            <div class="mx-auto container">
-                <div class="text-center mb-24">
-                    <h2 class="step__title h2 mb-4">Langkah Pemesanan</h2>
-                </div>
-                <!-- grid items -->
-                <div class="grid grid-cols-1 gap-12 xl:grid-cols-3">
-                    <!-- steps 1 -->
-                    <div class="steps__step text-center">
-                        <div class="mb-4">
-                            <i class="ri-mail-send-line text-5xl text-accent"></i>
-                        </div>
-                        <h3 class="h3 mb-5">Klik Tombol di Bawah</h3>
-                        <p class="mb-5 max-w-md mx-auto p">Klik untuk memesan Sundahub.</p>
-                        <a href="#" class="font-medium gap-2 flex justify-center">
-                            Pesan Sekarang <i class="ri-arrow-right-line text-accent"></i></a>
-                    </div>
-                    <!-- steps 2 -->
-                    <div class="steps__step text-center">
-                        <div class="mb-4">
-                            <i class="ri-calendar-check-line text-5xl text-accent"></i>
-                        </div>
-                        <h3 class="h3 mb-5">Tempat, Waktu, dan Jenis Jasa</h3>
-                        <p class="mb-5 max-w-md mx-auto p">Tentukan jenis jasa apa yang kalian inginkan, dan bicarakan waktu dan tempat sesuai keinginan anda.</p>
-                    </div>
-                    <!-- steps 3 -->
-                    <div class="steps__step text-center">
-                        <div class="mb-4">
-                            <i class="ri-shake-hands-line text-5xl text-accent"></i>
-                        </div>
-                        <h3 class="h3 mb-5">Melakukan Dealing</h3>
-                        <p class="mb-5 max-w-md mx-auto p">Diskusikan harga jasa dengan Sundahub dan lakukan <i>dealing</i>. Konfirmasikan pembayaran anda.</p>
-                    </div>
                 </div>
             </div>
         </section>
@@ -130,7 +94,8 @@
                             </div>
                         </div>
                         <!-- button -->
-                        <button class="btn bg-slate-800 mx-auto lg:mx-0 hover:bg-slate-200 hover:text-slate-900 hover:shadow-md focus:ring focus:ring-accent transition duration-300">Hubungi kami
+                        <button class="btn bg-slate-800 mx-auto lg:mx-0 hover:bg-slate-200 hover:text-slate-900 hover:shadow-md focus:ring focus:ring-accent transition duration-300"
+                        onclick="window.open('https://bit.ly/PesanSundahub', '_blank')">Hubungi kami
                             <i class="ri-arrow-right-line text-accent"></i>
                         </button>
                     </div>
@@ -140,6 +105,114 @@
                     <img class="w-[600px] rounded-bl-[10rem] rounded-tr-[10rem]" src="assets/assets/about/tari-solo.jpg" alt="about">
                 </div>
                 
+                </div>
+            </div>
+        </section>
+
+        <!-- jasa -->
+        <section class="work mt-[80px] xl:mt-[150px] relative z-20" id="jasa">
+            <div class="container mx-auto px-0">
+                <!-- text -->
+                <div class="text-center mb-24">
+                    <h2 class="work__title h2 mb-4">Apa yang kami tawarkan</h2>
+                    <p class="work__subtitle max-w-3xl mx-auto p">Berbagai jasa kesenian Sunda yang murah dan berkualitas yang kami tawarkan.</p>
+                </div>
+                <!-- grid -->
+                <div class="work__grid grid grid-cols-1 xl:grid-cols-2 gap-x-[104px] gap-y-[56px]">
+                    <!-- item 1-->
+                    <div class="w-full max-w-[548px] h-full mx-auto" id="pertunjukan">
+                        <img class="mb-6 xxs:rounded-tr-[100px]" src="assets/assets/work/IMG_4269.png" alt="">
+                        <div class="flex justify-evenly xxs:justify-between items-center w-full">
+                            <div class="">
+                                <h3 class="h3">Seni Pertunjukan</h3>
+                                <p class="p">Tarian dan Musik yang Beragam</p>
+                            </div>
+                            <button class="bg-accent-secondary hover:bg-accent/25 w-[70px] h-[70px] rounded-full"
+                            onclick="window.open('https://bit.ly/PesanSundahub', '_blank')">
+                                <i class="ri-arrow-right-s-line text-primary text-3xl pl-1"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <!-- item 2-->
+                    <div class="w-full max-w-[548px] h-full mx-auto" id="adat">
+                        <img class="mb-6 xxs:rounded-tl-[100px]" src="assets/assets/work/upacaraadat.jpg" alt="">
+                        <div class="flex justify-evenly xxs:justify-between items-center w-full">
+                            <div>
+                                <h3 class="h3">Upacara Adat</h3>
+                                <p class="p">Berbagai Upacara Adat meriah</p>
+                            </div>
+                            <div class="flex-none">
+                                <button class="bg-accent-secondary hover:bg-accent/25 w-[70px] h-[70px] rounded-full"
+                                onclick="window.open('https://bit.ly/PesanSundahub', '_blank')">
+                                    <i class="ri-arrow-right-s-line text-primary text-3xl pl-1"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- item 3
+                    <div class="w-full max-w-[548px] h-full mx-auto">
+                        <img class="mb-6" src="assets/assets/work/03.png" alt="">
+                        <div class="flex justify-between items-center w-full">
+                            <div>
+                                <h3 class="h3">Modern Kitchen</h3>
+                                <p>Decor/Architecture</p>
+                            </div>
+                            <button class="bg-accent-secondary hover:bg-accent/25 w-[70px] h-[70px] rounded-full">
+                                <i class="ri-arrow-right-s-line text-primary text-3xl pl-1"></i>
+                            </button>
+                        </div>
+                    </div> -->
+                    <!-- item 4-->
+                    <!-- <div class="w-full max-w-[548px] h-full mx-auto">
+                        <img class="mb-6" src="assets/assets/work/04.png" alt="">
+                        <div class="flex justify-between items-center w-full">
+                            <div>
+                                <h3 class="h3">Modern Kitchen</h3>
+                                <p>Decor/Architecture</p>
+                            </div>
+                            <button class="bg-accent-secondary hover:bg-accent/25 w-[70px] h-[70px] rounded-full">
+                                <i class="ri-arrow-right-s-line text-primary text-3xl pl-1"></i>
+                            </button>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </section>
+        
+        <!-- langkah -->
+        <section class="steps mt-[80px] xl:mt-[200px] relative z-20" id="langkah">
+            <div class="mx-auto container">
+                <div class="text-center mb-24">
+                    <h2 class="step__title h2 mb-4">Langkah Pemesanan</h2>
+                </div>
+                <!-- grid items -->
+                <div class="grid grid-cols-1 gap-12 xl:grid-cols-3">
+                    <!-- steps 1 -->
+                    <div class="steps__step text-center">
+                        <div class="mb-4">
+                            <i class="ri-mail-send-line text-5xl text-accent"></i>
+                        </div>
+                        <h3 class="h3 mb-5">Klik Tombol di Bawah</h3>
+                        <p class="mb-5 max-w-md mx-auto p">Klik untuk memesan Sundahub.</p>
+                        <a href="https://bit.ly/PesanSundahub" target="_blank" class="font-medium gap-2 flex justify-center">
+                            Pesan Sekarang <i class="ri-arrow-right-line text-accent"></i></a>
+                    </div>
+                    <!-- steps 2 -->
+                    <div class="steps__step text-center">
+                        <div class="mb-4">
+                            <i class="ri-calendar-check-line text-5xl text-accent"></i>
+                        </div>
+                        <h3 class="h3 mb-5">Tempat, Waktu, dan Jenis Jasa</h3>
+                        <p class="mb-5 max-w-md mx-auto p">Tentukan jenis jasa apa yang kalian inginkan, dan bicarakan waktu dan tempat sesuai keinginan anda.</p>
+                    </div>
+                    <!-- steps 3 -->
+                    <div class="steps__step text-center">
+                        <div class="mb-4">
+                            <i class="ri-shake-hands-line text-5xl text-accent"></i>
+                        </div>
+                        <h3 class="h3 mb-5">Melakukan Dealing</h3>
+                        <p class="mb-5 max-w-md mx-auto p">Diskusikan harga jasa dengan Sundahub dan lakukan <i>dealing</i>. Konfirmasikan pembayaran anda.</p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -247,74 +320,6 @@
             </div>
         </section> -->
 
-        <!-- jasa -->
-        <section class="work mt-[80px] xl:mt-[150px] relative z-20" id="jasa">
-            <div class="container mx-auto px-0">
-                <!-- text -->
-                <div class="text-center mb-24">
-                    <h2 class="work__title h2 mb-4">Apa yang kami tawarkan</h2>
-                    <p class="work__subtitle max-w-3xl mx-auto p">Berbagai jasa kesenian Sunda yang murah dan berkualitas yang kami tawarkan.</p>
-                </div>
-                <!-- grid -->
-                <div class="work__grid grid grid-cols-1 xl:grid-cols-2 gap-x-[104px] gap-y-[56px]">
-                    <!-- item 1-->
-                    <div class="w-full max-w-[548px] h-full mx-auto">
-                        <img class="mb-6 xxs:rounded-tr-[100px]" src="assets/assets/work/IMG_4269.png" alt="">
-                        <div class="flex justify-evenly xxs:justify-between items-center w-full">
-                            <div class="">
-                                <h3 class="h3">Seni Pertunjukan</h3>
-                                <p class="p">Pilihlah Tarian dan Musik yang Beragam</p>
-                            </div>
-                            <button class="bg-accent-secondary hover:bg-accent/25 w-[70px] h-[70px] rounded-full">
-                                <i class="ri-arrow-right-s-line text-primary text-3xl pl-1"></i>
-                            </button>
-                        </div>
-                    </div>
-                    <!-- item 2-->
-                    <div class="w-full max-w-[548px] h-full mx-auto">
-                        <img class="mb-6 xxs:rounded-tl-[100px]" src="assets/assets/work/upacaraadat.jpg" alt="">
-                        <div class="flex justify-evenly xxs:justify-between items-center w-full">
-                            <div>
-                                <h3 class="h3">Upacara Adat</h3>
-                                <p class="p">Pilihlah berbagai Upacara Adat</p>
-                            </div>
-                            <div class="flex-none">
-                                <button class="bg-accent-secondary hover:bg-accent/25 w-[70px] h-[70px] rounded-full">
-                                    <i class="ri-arrow-right-s-line text-primary text-3xl pl-1"></i>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- item 3
-                    <div class="w-full max-w-[548px] h-full mx-auto">
-                        <img class="mb-6" src="assets/assets/work/03.png" alt="">
-                        <div class="flex justify-between items-center w-full">
-                            <div>
-                                <h3 class="h3">Modern Kitchen</h3>
-                                <p>Decor/Architecture</p>
-                            </div>
-                            <button class="bg-accent-secondary hover:bg-accent/25 w-[70px] h-[70px] rounded-full">
-                                <i class="ri-arrow-right-s-line text-primary text-3xl pl-1"></i>
-                            </button>
-                        </div>
-                    </div> -->
-                    <!-- item 4-->
-                    <!-- <div class="w-full max-w-[548px] h-full mx-auto">
-                        <img class="mb-6" src="assets/assets/work/04.png" alt="">
-                        <div class="flex justify-between items-center w-full">
-                            <div>
-                                <h3 class="h3">Modern Kitchen</h3>
-                                <p>Decor/Architecture</p>
-                            </div>
-                            <button class="bg-accent-secondary hover:bg-accent/25 w-[70px] h-[70px] rounded-full">
-                                <i class="ri-arrow-right-s-line text-primary text-3xl pl-1"></i>
-                            </button>
-                        </div>
-                    </div> -->
-                </div>
-            </div>
-        </section>
-
         <!-- stats -->
         <section class="stats mt-[80px] xl:mt-[150px] relative z-20 bg-accent-secondary py-[80px] 
         xl:p-[150px]">
@@ -360,7 +365,8 @@
                         <div class="flex items-center justify-between">
                             <p class="text-base p">18 October,2023</p>
                             <button class="bg-accent-secondary w-[52px] h-[52px] rounded-full 
-                            group-hover:bg-white transition-all"> 
+                            group-hover:bg-white transition-all"
+                            onclick="window.open('https://www.unpad.ac.id/2023/10/lises-unpad-tampilkan-kesenian-sunda-di-malaysia-dan-korea-selatan/', '_blank')"> 
                                 <i class="ri-arrow-right-s-line text-3xl text-primary pl-1">
                             </i></button>
                         </div>
@@ -376,7 +382,8 @@
                         <div class="flex items-center justify-between">
                             <p class="text-base p">28 August,2022</p>
                             <button class="bg-accent-secondary w-[52px] h-[52px] rounded-full 
-                            group-hover:bg-white transition-all"> 
+                            group-hover:bg-white transition-all"
+                            onclick="window.open('https://www.unpad.ac.id/2022/07/lises-unpad-raih-juara-di-ajang-gebyar-lldikti-wilayah-iv-2022/', '_blank')"> 
                                 <i class="ri-arrow-right-s-line text-3xl text-primary pl-1">
                             </i></button>
                         </div>
@@ -392,7 +399,8 @@
                     <div class="flex items-center justify-between">
                         <p class="text-base p">14 May,2019</p>
                         <button class="bg-accent-secondary w-[52px] h-[52px] rounded-full 
-                        group-hover:bg-white transition-all"> 
+                        group-hover:bg-white transition-all"
+                        onclick="window.open('https://www.unpad.ac.id/2019/05/lises-unpad-tampil-memukau-di-2-universitas-di-thailand/', '_blank')"> 
                             <i class="ri-arrow-right-s-line text-3xl text-primary pl-1">
                         </i></button>
                     </div>
@@ -406,7 +414,9 @@
                 <div class="contact__text max-w-[640px] mx-auto text-center">
                     <h2 class="h2 text-white mb-4">Tertarik dengan Sundahub?</h2>
                     <p class="text-white mb-8 max-w-sm xl:max-w-none mx-auto p">Hubungi kami kapan saja untuk menyewa jasa Sundahub.</p>
-                    <button class="btn bg-accent hover:bg-accent/60 mx-auto">Hubungi kami<i class="ri-arrow-right-line text-primary"></i></button>
+                    <button class="btn bg-accent hover:bg-accent/60 mx-auto"
+                    onclick="window.open('https://bit.ly/PesanSundahub', '_blank')">
+                    Hubungi kami<i class="ri-arrow-right-line text-primary"></i></button>
                 </div>
             </div>
         </section>
@@ -427,8 +437,8 @@
                         <p class="mb-8 text-xl text-[20px]">Sundahub, jasa kesenian sunda yang menawarkan penampilan menawan.</p>
                         <!-- socials-->
                         <ul class="text-primary flex gap-[54px] justify-center xl:justify-start">
-                            <li><a href=""><i class="ri-instagram-fill text-4xl"></i></a></li>
-                            <li><a href=""><i class="ri-mail-fill text-4xl"></i></a></li>
+                            <li><a href="https://instagram.com/sundahub" target="_blank"><i class="ri-instagram-fill text-4xl"></i></a></li>
+                            <li><a href="mailto:sundahub.official@gmail.com" target="_blank"><i class="ri-mail-fill text-4xl"></i></a></li>
                         </ul>
                     </div>
         
@@ -437,18 +447,20 @@
                         <div class="footer__item">
                             <h3 class="h3 mb-3">Halaman</h3>
                             <ul class="flex flex-col gap-4">
-                                <li><a href="">Tentang</a></li>
-                                <li><a href="">Testimoni</a></li>
-                                <li><a href="">Pengalaman</a></li>
-                                <li><a href="">Berita</a></li>
-                                <li><a href="">Hubungi kami</a></li>
+                                <li><a href="#" class="duration-300">Beranda</a></li>
+                                <li><a href="#about" class="duration-300">Tentang</a></li>
+                                <li><a href="#jasa" class="duration-300">Jasa</a></li>
+                                <li><a href="#langkah" class="duration-300">Langkah</a></li>
+                                <li><a href="#testimoni" class="duration-300">Testimoni</a></li>
+                                <li><a href="#berita" class="duration-300">Berita</a></li>
+                                <li><a href="#hubungi" class="duration-300">Hubungi kami</a></li>
                             </ul>
                         </div>
                         <div class="footer__item">
                             <h3 class="h3 mb-3">Services</h3>
                             <ul class="flex flex-col gap-4">
-                                <li><a href="">Seni Pertunjukan</a></li>
-                                <li><a href="">Upacara Adat</a></li>
+                                <li><a href="#pertunjukan">Seni Pertunjukan</a></li>
+                                <li><a href="#adat">Upacara Adat</a></li>
                             </ul>
                         </div>
                         <div class="footer__item max-w-[260px] mx-auto xl:mx-0">
