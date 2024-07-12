@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sundahub</title>
+    <link rel="icon" href="assets/assets/title/title1.png" type="image/icon type">
     <!-- CSS -->
     <link rel="stylesheet" href="css/output.css">
     <!-- ICONS -->
@@ -22,7 +23,7 @@
         <div class="container mx-auto flex justify-between h-full items-center">
             <!-- logo -->
             <div>
-                <a href="#" class="flex flex-row items-center gap-3">
+                <a href="beranda" class="flex flex-row items-center gap-3">
                     <img class="h-[40px]" src="assets/assets/Sundahub logo.webp" alt="Logo">
                     <h2 class="mt-[5px] text-[35px]">Sundahub</h2>
                 </a>
@@ -33,17 +34,24 @@
                 <div class="cursor-pointer lg:hidden" id="nav_trigger_btn">
                     <i class="ri-menu-4-line text-4xl text-primary"></i>
                 </div>
-                <ul class="fixed h-0 w-full bg-white overflow-hidden border-t top-[90px] flex flex-col gap-4 left-0 
+                <ul class="fixed h-0 w-full bg-white overflow-hidden border-t top-[90px] flex flex-col gap-5 left-0 
                 right-0 lg:relative lg:flex-row lg:p-0 lg:top-0 lg:border-none lg:h-full transition-all duration-300 nav_btn"
                 id="nav_menu">
-                    <li><a href="index.html" class="duration-300">Beranda</a></li>
-                    <li><a href="profil.html" class="duration-300">Layanan</a></li>
-                    <li><a href="blog.html" class="duration-300">Blog</a></li>
-                    <li><a href="tim.html" class="duration-300">Tim</a></li>
-                    <li><a href="pesan.html" class="duration-300">Cara Pemesanan</a></li>
-                    <li><a href="pesansekarang.html" class="duration-300">Hubungi kami!</a></li>
+                    <li><a href="beranda" class="duration-300">Beranda</a></li>
+                    <li><a href="layanan" class="duration-300">Layanan</a></li>
+                    <li><a href="blog" class="duration-300">Blog</a></li>
+                    <li><a href="tim" class="duration-300">Tim</a></li>
+                    <li><a href="pesan" class="duration-300">Cara Pemesanan</a></li>
+                    <li><button class="text-[22px] py-[15px] px-[25px] transition-all duration-300 text-white rounded-3xl bg-primary hover:bg-primary-hover flex items-center gap-2 focus:ring focus:ring-accent"
+                        onclick="window.open('https://bit.ly/HubungiSundahub', '_blank')"
+                        id="nav_button"><i class="ri-phone-fill text-accent"></i>Kontak Kami
+                </button></li>
                 </ul>
             </nav>
+            <button class="text-[22px] py-[15px] px-[25px] transition-all duration-300 text-white rounded-3xl bg-primary hover:bg-primary-hover flex items-center gap-2 focus:ring focus:ring-accent"
+                    onclick="window.open('https://bit.ly/HubungiSundahub', '_blank')"
+                    id="main_button"><i class="ri-phone-fill text-accent"></i>Kontak Kami
+            </button>
         </div>
     </header>
 
@@ -165,7 +173,7 @@
         </section>
 
         <!-- Testimonial -->
-        <section class="testimonial mt-[80px] xl:mt-[200px] relative z-20" id="testimoni">
+        <section class="hidden testimonial mt-[80px] xl:mt-[200px] relative z-20" id="testimoni">
             <div class="testimonial__bg container mx-auto bg-accent-secondary px-6 xxs:rounded-[70px]">
                 <div class="flex flex-col items-center pt-[88px] pb-[110px]">
                     <h2 class="testimonial__title h2 mb-9 text-center">Testimoni Klien Kami</h2>
@@ -257,7 +265,7 @@
         </section>
 
         <!-- stats -->
-        <section class="stats mt-[80px] xl:mt-[150px] relative z-20 bg-accent-secondary py-[80px] 
+        <section class="hidden stats mt-[80px] xl:mt-[150px] relative z-20 bg-accent-secondary py-[80px] 
         xl:p-[150px]">
             <div class="container mx-auto">
                 <!-- grid -->
@@ -320,13 +328,12 @@
                         <div class="footer__item">
                             <h3 class="h3 mb-3">Halaman</h3>
                             <ul class="flex flex-col gap-4">
-                                <li><a href="#" class="duration-300">Beranda</a></li>
-                                <li><a href="#about" class="duration-300">Tentang</a></li>
-                                <li><a href="#jasa" class="duration-300">Jasa</a></li>
-                                <li><a href="#langkah" class="duration-300">Langkah</a></li>
-                                <li><a href="#testimoni" class="duration-300">Testimoni</a></li>
-                                <li><a href="#berita" class="duration-300">Berita</a></li>
-                                <li><a href="#hubungi" class="duration-300">Hubungi kami</a></li>
+                                <li><a href="beranda" class="duration-300">Beranda</a></li>
+                                <li><a href="layanan" class="duration-300">Layanan</a></li>
+                                <li><a href="blog" class="duration-300">Blog</a></li>
+                                <li><a href="tim" class="duration-300">Tim</a></li>
+                                <li><a href="pesan" class="duration-300">Cara Pemesanan</a></li>
+                                <li><a href="https://bit.ly/HubungiSundahub" target="_blank" class="duration-300">Hubungi kami</a></li>
                             </ul>
                         </div>
                         <div class="footer__item">

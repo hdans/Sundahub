@@ -10,6 +10,23 @@ navBtn.addEventListener('click', ()=>{
     navMenu.classList.toggle('nav-is-open')
 })
 
+
+const mainButton = document.querySelector('#main_button');
+const navButton = document.querySelector('#nav_button');
+
+function toggleButtonVisibility() {
+    if (window.innerWidth >= 960) { // lg breakpoint
+        mainButton.classList.remove('hidden');
+        navButton.classList.add('hidden');
+    } else {
+        mainButton.classList.add('hidden');
+        navButton.classList.remove('hidden');
+    }
+}
+
+toggleButtonVisibility();
+window.addEventListener('resize', toggleButtonVisibility);
+
 //swiper
 
 const swiper = new Swiper('.swiper', {
