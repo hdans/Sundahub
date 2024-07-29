@@ -3,6 +3,9 @@ RewriteEngine On
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME}\.html -f
 RewriteRule ^(.*)$ $1.html [L]
+    
+RewriteRule ^beranda$ index.html [L]
+RewriteRule ^$ index.html [L]
 
 RewriteRule ^layanan$ layanan.html [L]
 RewriteRule ^$ layanan.html [L]
@@ -16,6 +19,4 @@ RewriteRule ^$ pesan.html [L]
 RewriteRule ^blog$ blog.html [L]
 RewriteRule ^$ blog.html [L]
 
-RewriteRule ^beranda$ index.html [L]
-RewriteRule ^$ index.html [L]
 
