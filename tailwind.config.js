@@ -8,11 +8,10 @@ module.exports = {
       },
     },
     screens:{
-      xxs:'400px',
-      xsm:'550px',
-      sm:'640px',
+      xsm:'360px',
+      sm:'480px',
       md:'768px',
-      lg:'960px',
+      lg:'1024px',
       xl:'1200px',
     },
     fontFamily:{
@@ -31,11 +30,8 @@ module.exports = {
         secondary: '#4d5053',
         accent: {
           DEFAULT: '#cda274',
-          // #803300' 
           secondary: '#f4f0ec',
-          // #d4b781''
           hover: '#b88c5d',
-          // #501100
 
         },
       },

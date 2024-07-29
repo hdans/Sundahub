@@ -550,21 +550,15 @@ video {
   padding-left: 15px;
 }
 
-@media (min-width: 400px) {
+@media (min-width: 360px) {
   .container {
-    max-width: 400px;
+    max-width: 360px;
   }
 }
 
-@media (min-width: 550px) {
+@media (min-width: 480px) {
   .container {
-    max-width: 550px;
-  }
-}
-
-@media (min-width: 640px) {
-  .container {
-    max-width: 640px;
+    max-width: 480px;
   }
 }
 
@@ -574,9 +568,9 @@ video {
   }
 }
 
-@media (min-width: 960px) {
+@media (min-width: 1024px) {
   .container {
-    max-width: 960px;
+    max-width: 1024px;
   }
 }
 
@@ -1252,7 +1246,7 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1;
 }
 
-@media (min-width: 960px) {
+@media (min-width: 1024px) {
   .h1 {
     font-size: 84px;
   }
@@ -1323,13 +1317,13 @@ h1, h2, h3, h4, h5, h6 {
   background-color: rgb(41 47 54 / var(--tw-bg-opacity));
 }
 
-@media screen and (max-width: 400px){
+@media screen and (max-width: 440px){
   .h1 {
     font-size: 48px;
     line-height: 1;
   }
 
-  @media (min-width: 960px) {
+  @media (min-width: 1024px) {
     .h1 {
       font-size: 84px;
     }
@@ -1411,31 +1405,31 @@ h1, h2, h3, h4, h5, h6 {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-@media (min-width: 400px) {
-  .xxs\:justify-between {
+@media (min-width: 360px) {
+  .xsm\:justify-between {
     justify-content: space-between;
   }
 
-  .xxs\:rounded-\[70px\] {
+  .xsm\:rounded-\[70px\] {
     border-radius: 70px;
   }
 
-  .xxs\:rounded-tl-\[100px\] {
+  .xsm\:rounded-tl-\[100px\] {
     border-top-left-radius: 100px;
   }
 
-  .xxs\:rounded-tr-\[100px\] {
+  .xsm\:rounded-tr-\[100px\] {
     border-top-right-radius: 100px;
   }
 }
 
-@media (min-width: 550px) {
-  .xsm\:max-w-\[350px\] {
+@media (min-width: 480px) {
+  .sm\:max-w-\[350px\] {
     max-width: 350px;
   }
 }
 
-@media (min-width: 960px) {
+@media (min-width: 1024px) {
   .lg\:relative {
     position: relative;
   }
